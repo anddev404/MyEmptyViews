@@ -8,6 +8,7 @@ import android.widget.ImageView
 class MainActivity : AppCompatActivity() {
 
     lateinit var loginImageView: ImageView
+    lateinit var basketImageView: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,11 +22,17 @@ class MainActivity : AppCompatActivity() {
 
     fun initializeViews() {
         loginImageView = findViewById(R.id.imageView1)
+        basketImageView = findViewById(R.id.imageView2)
+
     }
 
     fun setOnClickListeners() {
         loginImageView.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
+        basketImageView.setOnClickListener {
+            val intent = Intent(this, BasketActivity::class.java)
             startActivity(intent)
         }
     }
