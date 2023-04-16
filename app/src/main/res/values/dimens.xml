@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="logo_image_width" format="float" type="dimen">0.5</item>
+</resources>
