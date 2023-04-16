@@ -11,4 +11,7 @@
     <color name="circle_color">#FF67D0C2</color>
     <color name="login_bg_color_top">#FF26BB9B</color>
     <color name="login_bg_color_bottom">#FF00B1BB</color>
+    <color name="login_edittext_color">#FF57CBCA</color>
+    <color name="login_button_color">#FFCD7271</color>
+
 </resources>

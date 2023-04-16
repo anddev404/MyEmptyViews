@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="logo_image_width" format="float" type="dimen">0.5</item>
+    <dimen name="login_text_large">24sp</dimen>
+    <dimen name="login_text_normal">20sp</dimen>
 </resources>

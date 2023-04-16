@@ -18,48 +18,106 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.5"></androidx.constraintlayout.widget.Guideline>
+            app:layout_constraintGuide_percent="0.5" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline_left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.1"></androidx.constraintlayout.widget.Guideline>
+            app:layout_constraintGuide_percent="0.1" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline_right"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.9"></androidx.constraintlayout.widget.Guideline>
+            app:layout_constraintGuide_percent="0.9" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline_bottom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.75"></androidx.constraintlayout.widget.Guideline>
+            app:layout_constraintGuide_percent="0.75" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline_bottom2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.95"></androidx.constraintlayout.widget.Guideline>
+            app:layout_constraintGuide_percent="0.95" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:contentDescription="@string/logo"
             android:src="@drawable/layer_list_login_image"
             app:layout_constraintBottom_toBottomOf="@id/guideline"
             app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintWidth_percent="@dimen/logo_image_width"></ImageView>
+            app:layout_constraintWidth_percent="@dimen/logo_image_width" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="username"
+            android:background="@color/login_edittext_color"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="12dp"
+            android:hint="@string/username"
+            android:importantForAutofill="auto"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/login_text_normal"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@id/password"
+            app:layout_constraintLeft_toLeftOf="@id/guideline_left"
+            app:layout_constraintRight_toRightOf="@id/guideline_right"
+            app:layout_constraintTop_toTopOf="@id/guideline" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:autofillHints="password"
+            android:background="@color/login_edittext_color"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="12dp"
+            android:hint="@string/password"
+            android:importantForAutofill="auto"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@id/button"
+            app:layout_constraintLeft_toLeftOf="@id/guideline_left"
+            app:layout_constraintRight_toRightOf="@id/guideline_right"
+            app:layout_constraintTop_toBottomOf="@id/username" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/login_button_color"
+            android:text="@string/sign_in"
+            android:textSize="@dimen/login_text_large"
+            android:typeface="monospace"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_bottom"
+            app:layout_constraintLeft_toLeftOf="@id/guideline_left"
+            app:layout_constraintRight_toRightOf="@id/guideline_right"
+            app:layout_constraintTop_toBottomOf="@id/password" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 </ScrollView>
