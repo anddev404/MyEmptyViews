@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyEmptyViews</string>
+    <string name="choose_activity">wybór aktywności</string>
 </resources>
