@@ -118,6 +118,33 @@
             app:layout_constraintRight_toRightOf="@id/guideline_right"
             app:layout_constraintTop_toBottomOf="@id/password" />
 
+        <TextView
+            android:id="@+id/textview_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="@string/forgot_password"
+            android:textColor="@color/white"
+            android:textSize="@dimen/login_text_small"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@id/textview_2"
+            app:layout_constraintLeft_toLeftOf="@id/guideline_left"
+            app:layout_constraintRight_toRightOf="@id/guideline_right" />
+
+        <TextView
+            android:id="@+id/textview_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/new_here_sigh_up"
+            android:textColor="@color/white"
+            android:textSize="@dimen/login_text_small"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_bottom2"
+            app:layout_constraintLeft_toLeftOf="@id/guideline_left"
+            app:layout_constraintRight_toRightOf="@id/guideline_right" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

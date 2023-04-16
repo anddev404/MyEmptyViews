@@ -3,4 +3,5 @@
     <item name="logo_image_width" format="float" type="dimen">0.5</item>
     <dimen name="login_text_large">24sp</dimen>
     <dimen name="login_text_normal">20sp</dimen>
+    <dimen name="login_text_small">18sp</dimen>
 </resources>
