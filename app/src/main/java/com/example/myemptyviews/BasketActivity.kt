@@ -28,6 +28,7 @@ class BasketActivity : AppCompatActivity() {
         supportActionBar?.setBackgroundDrawable(ColorDrawable(resources.getColor(R.color.white)))
         supportActionBar?.setDisplayHomeAsUpEnabled(true);
         supportActionBar?.setHomeAsUpIndicator(com.google.android.material.R.drawable.ic_arrow_back_black_24);
+        supportActionBar?.elevation = 0f
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
