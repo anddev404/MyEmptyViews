@@ -17,17 +17,22 @@ class BasketActivity : AppCompatActivity() {
 
     private fun setUpActionBar() {
 
-        supportActionBar?.title =
-            Html.fromHtml(
-                "<b><font color=\"${resources.getColor(R.color.black)}\">${
-                    resources.getString(
-                        R.string.your_basket
-                    )
-                }</font></b>"
+        supportActionBar?.title = Html.fromHtml(
+            "<b><font color=\"${resources.getColor(R.color.black, theme)}\">${
+                resources.getString(
+                    R.string.your_basket
+                )
+            }</font></b>"
+        )
+        supportActionBar?.setBackgroundDrawable(
+            ColorDrawable(
+                resources.getColor(
+                    R.color.white, theme
+                )
             )
-        supportActionBar?.setBackgroundDrawable(ColorDrawable(resources.getColor(R.color.white)))
-        supportActionBar?.setDisplayHomeAsUpEnabled(true);
-        supportActionBar?.setHomeAsUpIndicator(com.google.android.material.R.drawable.ic_arrow_back_black_24);
+        )
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setHomeAsUpIndicator(com.google.android.material.R.drawable.ic_arrow_back_black_24)
         supportActionBar?.elevation = 0f
     }
 
