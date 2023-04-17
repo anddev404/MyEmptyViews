@@ -14,4 +14,9 @@
     <color name="login_edittext_color">#FF57CBCA</color>
     <color name="login_button_color">#FFCD7271</color>
 
+    <color name="basket_button_color">#FF039750</color>
+    <color name="basket_text_color">#FF030303</color>
+    <color name="basket_stroke_color">#FFE7E7E7</color>
+    <color name="basket_icon_color">#FF7E7E7E</color>
+
 </resources>
