@@ -4,4 +4,8 @@
     <dimen name="login_text_large">24sp</dimen>
     <dimen name="login_text_normal">20sp</dimen>
     <dimen name="login_text_small">18sp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_normal">12dp</dimen>
+    <dimen name="margin_large">20dp</dimen>
+
 </resources>
