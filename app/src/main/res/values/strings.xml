@@ -8,12 +8,14 @@
     <string name="third_activity">third activity</string>
     <string name="fourth_activity">fourth activity</string>
 
-
     <string name="logo">logo</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="sign_in">SIGN IN</string>
-    <string name="new_here_sigh_up">New Here? Sigh up</string>
+    <string name="new_here_sign_up">New Here? Sign up</string>
     <string name="forgot_password">Forgot password?</string>
+    <string name="clicked_sign_in">You Clicked: Sign in</string>
+    <string name="clicked_forgot_password">You clicked: Forgot password</string>
+    <string name="clicked_sign_up">You clicked: Sign up</string>
 
 </resources>
