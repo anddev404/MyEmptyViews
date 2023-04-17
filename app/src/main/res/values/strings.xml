@@ -18,4 +18,22 @@
     <string name="clicked_forgot_password">You clicked: Forgot password</string>
     <string name="clicked_sign_up">You clicked: Sign up</string>
 
+    <string name="your_basket">Your basket</string>
+    <string name="donut">logo</string>
+    <string name="peas">logo</string>
+    <string name="oranges"></string>
+    <string name="price_1">$2.97</string>
+    <string name="price_2">$1.64</string>
+    <string name="price_3">$4</string>
+    <string name="donut_pc">logo</string>
+    <string name="peas_pc">logo</string>
+    <string name="oranges_pc"></string>
+    <string name="subtotal">Subtotal</string>
+    <string name="delivery">Delivery</string>
+    <string name="total">Total</string>
+    <string name="subtotal_price">$8.61</string>
+    <string name="delivery_price">$1.00</string>
+    <string name="total_price">$9.61</string>
+    <string name="order_now">Order now</string>
+
 </resources>
