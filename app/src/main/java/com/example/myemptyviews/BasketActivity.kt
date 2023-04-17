@@ -19,11 +19,11 @@ class BasketActivity : AppCompatActivity() {
 
         supportActionBar?.title =
             Html.fromHtml(
-                "<font color=\"${resources.getColor(R.color.black)}\">${
+                "<b><font color=\"${resources.getColor(R.color.black)}\">${
                     resources.getString(
                         R.string.your_basket
                     )
-                }</font>"
+                }</font></b>"
             )
         supportActionBar?.setBackgroundDrawable(ColorDrawable(resources.getColor(R.color.white)))
         supportActionBar?.setDisplayHomeAsUpEnabled(true);
