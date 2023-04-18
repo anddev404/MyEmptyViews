@@ -35,5 +35,7 @@
     <string name="delivery_price">$1.00</string>
     <string name="total_price">$9.61</string>
     <string name="order_now">Order now</string>
+    <string name="increase">increase</string>
+    <string name="decrease">decrease</string>
 
 </resources>
