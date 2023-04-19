@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="ProductAmountView">
+        <attr name="amount" format="float" />
+    </declare-styleable>
+</resources>

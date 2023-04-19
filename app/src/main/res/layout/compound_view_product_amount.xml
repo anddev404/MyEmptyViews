@@ -9,50 +9,44 @@
     android:theme="@style/BasketActivityEditTextStyle">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/minus_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/vector_minus"
         android:contentDescription="@string/decrease"
-        android:scaleX="0.5"
-        android:scaleY="0.5"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/editText"
+        app:layout_constraintEnd_toStartOf="@+id/amount_text_view"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editText"
+    <TextView
+        android:id="@+id/amount_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:autofillHints="none"
-        android:background="@null"
-        android:hint="1"
-        android:inputType="number"
-        android:maxLength="3"
         android:paddingLeft="@dimen/margin_small"
         android:paddingRight="@dimen/margin_small"
         android:text="1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/plus_button"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/minus_button"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/plus_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/vector_plus"
         android:contentDescription="@string/increase"
-        android:scaleX="0.5"
-        android:scaleY="0.5"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/editText"
+        app:layout_constraintStart_toEndOf="@+id/amount_text_view"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
