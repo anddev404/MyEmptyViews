@@ -9,6 +9,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var loginImageView: ImageView
     private lateinit var basketImageView: ImageView
+    private lateinit var calorieCounterImageView: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
     private fun initializeViews() {
         loginImageView = findViewById(R.id.imageView1)
         basketImageView = findViewById(R.id.imageView2)
+        calorieCounterImageView = findViewById(R.id.imageView3)
 
     }
 
@@ -33,6 +35,10 @@ class MainActivity : AppCompatActivity() {
         }
         basketImageView.setOnClickListener {
             val intent = Intent(this, BasketActivity::class.java)
+            startActivity(intent)
+        }
+        calorieCounterImageView.setOnClickListener {
+            val intent = Intent(this, CalorieCounterActivity::class.java)
             startActivity(intent)
         }
     }

@@ -12,6 +12,9 @@
         android:theme="@style/Theme.MyEmptyViews"
         tools:targetApi="31">
         <activity
+            android:name=".CalorieCounterActivity"
+            android:exported="false" />
+        <activity
             android:name=".BasketActivity"
             android:exported="false" />
         <activity
