@@ -38,5 +38,6 @@
     <string name="increase">increase</string>
     <string name="decrease">decrease</string>
     <string name="image_of_product">image of product</string>
+    <string name="delete_product">delete the product from the basket</string>
 
 </resources>
