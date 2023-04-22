@@ -41,5 +41,6 @@
     <string name="delete_product">delete the product from the basket</string>
 
     <string name="calorie_background_image">background image</string>
+    <string name="description">description</string>
 
 </resources>
