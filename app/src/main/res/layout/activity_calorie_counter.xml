@@ -32,4 +32,15 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin_normal"
+        app:cardBackgroundColor="@color/calorie_counter_basic_color"
+        app:cardCornerRadius="@dimen/large_radius_card_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline_card_view" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
