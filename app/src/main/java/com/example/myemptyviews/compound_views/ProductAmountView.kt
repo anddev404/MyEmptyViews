@@ -47,9 +47,9 @@ class ProductAmountView(context: Context?, attrs: AttributeSet?) : LinearLayout(
     }
 
     fun setAmount(amount: Int) {
+        this.amount = amount
         if (amount < minAmount) this.amount = minAmount
         if (amount > maxAmount) this.amount = maxAmount
-
         amountTextView.text = "" + this.amount
     }
 }
