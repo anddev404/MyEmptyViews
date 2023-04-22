@@ -24,6 +24,7 @@
     <ImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:contentDescription="@string/calorie_background_image"
         android:scaleType="centerCrop"
         android:src="@drawable/image_salad"
         app:layout_constraintBottom_toBottomOf="@id/guideline_image"
