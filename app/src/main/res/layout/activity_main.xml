@@ -30,7 +30,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:contentDescription="@string/second_activity"
-            android:src="@drawable/image_not_available"
+            android:src="@drawable/screenshot_basket_activity"
             app:layout_constraintBottom_toTopOf="@id/guideline"
             app:layout_constraintLeft_toRightOf="@id/imageView1"
             app:layout_constraintRight_toRightOf="parent"
