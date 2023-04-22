@@ -19,9 +19,9 @@
     <string name="clicked_sign_up">You clicked: Sign up</string>
 
     <string name="your_basket">Your basket</string>
-    <string name="donut">logo</string>
-    <string name="peas">logo</string>
-    <string name="oranges"></string>
+    <string name="donut">donut</string>
+    <string name="peas">peas</string>
+    <string name="oranges">oranges</string>
     <string name="donut_price">$2.97</string>
     <string name="peas_price_">$1.64</string>
     <string name="oranges_price">$4</string>
