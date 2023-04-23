@@ -100,6 +100,39 @@
                     app:layout_constraintStart_toEndOf="@+id/protein"
                     app:layout_constraintTop_toBottomOf="@id/name" />
 
+                <TextView
+                    android:id="@+id/kcal_value"
+                    style="@style/CalorieActivityGreenTextStyle"
+                    android:text="@string/kcal_value"
+                    app:layout_constraintEnd_toStartOf="@+id/carbs_value"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/kcal" />
+
+                <TextView
+                    android:id="@+id/carbs_value"
+                    style="@style/CalorieActivityGreenTextStyle"
+                    android:text="@string/carbs_value"
+                    app:layout_constraintEnd_toStartOf="@+id/protein_value"
+                    app:layout_constraintStart_toEndOf="@+id/kcal_value"
+                    app:layout_constraintTop_toBottomOf="@id/carbs" />
+
+                <TextView
+                    android:id="@+id/protein_value"
+                    style="@style/CalorieActivityGreenTextStyle"
+                    android:text="@string/protein_value"
+                    app:layout_constraintEnd_toStartOf="@+id/fat_value"
+                    app:layout_constraintStart_toEndOf="@+id/carbs_value"
+                    app:layout_constraintTop_toBottomOf="@id/protein" />
+
+                <TextView
+                    android:id="@+id/fat_value"
+                    style="@style/CalorieActivityGreenTextStyle"
+                    android:text="@string/fat_value"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/protein_value"
+                    app:layout_constraintTop_toBottomOf="@id/fat" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
