@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.45" />
+        app:layout_constraintGuide_percent="0.40" />
 
     <ImageView
         android:layout_width="0dp"
@@ -43,116 +43,123 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@id/guideline_card_view">
 
-        <androidx.core.widget.NestedScrollView
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:contentDescription="@string/description">
+            android:padding="@dimen/margin_large">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="@dimen/margin_large">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/margin_large"
+                android:text="@string/caprese_salad"
+                android:textColor="@color/calorie_counter_text_color_black"
+                android:textSize="@dimen/login_text_large"
+                android:textStyle="bold"
+                android:typeface="serif"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:id="@+id/name"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="@dimen/margin_large"
-                    android:text="@string/caprese_salad"
-                    android:textColor="@color/calorie_counter_text_color_black"
-                    android:textSize="@dimen/login_text_large"
-                    android:textStyle="bold"
-                    android:typeface="serif"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/kcal"
+                style="@style/CalorieActivityGrayTextStyle"
+                android:text="@string/kcal"
+                app:layout_constraintEnd_toStartOf="@+id/carbs"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/name" />
 
-                <TextView
-                    android:id="@+id/kcal"
-                    style="@style/CalorieActivityGrayTextStyle"
-                    android:text="@string/kcal"
-                    app:layout_constraintEnd_toStartOf="@+id/carbs"
-                    app:layout_constraintHorizontal_chainStyle="spread_inside"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/name" />
+            <TextView
+                android:id="@+id/carbs"
+                style="@style/CalorieActivityGrayTextStyle"
+                android:text="@string/carbs"
+                app:layout_constraintEnd_toStartOf="@+id/protein"
+                app:layout_constraintStart_toEndOf="@+id/kcal"
+                app:layout_constraintTop_toBottomOf="@id/name" />
 
-                <TextView
-                    android:id="@+id/carbs"
-                    style="@style/CalorieActivityGrayTextStyle"
-                    android:text="@string/carbs"
-                    app:layout_constraintEnd_toStartOf="@+id/protein"
-                    app:layout_constraintStart_toEndOf="@+id/kcal"
-                    app:layout_constraintTop_toBottomOf="@id/name" />
+            <TextView
+                android:id="@+id/protein"
+                style="@style/CalorieActivityGrayTextStyle"
+                android:text="@string/protein"
+                app:layout_constraintEnd_toStartOf="@+id/fat"
+                app:layout_constraintStart_toEndOf="@+id/carbs"
+                app:layout_constraintTop_toBottomOf="@id/name" />
 
-                <TextView
-                    android:id="@+id/protein"
-                    style="@style/CalorieActivityGrayTextStyle"
-                    android:text="@string/protein"
-                    app:layout_constraintEnd_toStartOf="@+id/fat"
-                    app:layout_constraintStart_toEndOf="@+id/carbs"
-                    app:layout_constraintTop_toBottomOf="@id/name" />
+            <TextView
+                android:id="@+id/fat"
+                style="@style/CalorieActivityGrayTextStyle"
+                android:text="@string/fat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/protein"
+                app:layout_constraintTop_toBottomOf="@id/name" />
 
-                <TextView
-                    android:id="@+id/fat"
-                    style="@style/CalorieActivityGrayTextStyle"
-                    android:text="@string/fat"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/protein"
-                    app:layout_constraintTop_toBottomOf="@id/name" />
+            <TextView
+                android:id="@+id/kcal_value"
+                style="@style/CalorieActivityGreenTextStyle"
+                android:text="@string/kcal_value"
+                app:layout_constraintEnd_toStartOf="@+id/carbs_value"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/kcal" />
 
-                <TextView
-                    android:id="@+id/kcal_value"
-                    style="@style/CalorieActivityGreenTextStyle"
-                    android:text="@string/kcal_value"
-                    app:layout_constraintEnd_toStartOf="@+id/carbs_value"
-                    app:layout_constraintHorizontal_chainStyle="spread_inside"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/kcal" />
+            <TextView
+                android:id="@+id/carbs_value"
+                style="@style/CalorieActivityGreenTextStyle"
+                android:text="@string/carbs_value"
+                app:layout_constraintEnd_toStartOf="@+id/protein_value"
+                app:layout_constraintStart_toEndOf="@+id/kcal_value"
+                app:layout_constraintTop_toBottomOf="@id/carbs" />
 
-                <TextView
-                    android:id="@+id/carbs_value"
-                    style="@style/CalorieActivityGreenTextStyle"
-                    android:text="@string/carbs_value"
-                    app:layout_constraintEnd_toStartOf="@+id/protein_value"
-                    app:layout_constraintStart_toEndOf="@+id/kcal_value"
-                    app:layout_constraintTop_toBottomOf="@id/carbs" />
+            <TextView
+                android:id="@+id/protein_value"
+                style="@style/CalorieActivityGreenTextStyle"
+                android:text="@string/protein_value"
+                app:layout_constraintEnd_toStartOf="@+id/fat_value"
+                app:layout_constraintStart_toEndOf="@+id/carbs_value"
+                app:layout_constraintTop_toBottomOf="@id/protein" />
 
-                <TextView
-                    android:id="@+id/protein_value"
-                    style="@style/CalorieActivityGreenTextStyle"
-                    android:text="@string/protein_value"
-                    app:layout_constraintEnd_toStartOf="@+id/fat_value"
-                    app:layout_constraintStart_toEndOf="@+id/carbs_value"
-                    app:layout_constraintTop_toBottomOf="@id/protein" />
+            <TextView
+                android:id="@+id/fat_value"
+                style="@style/CalorieActivityGreenTextStyle"
+                android:text="@string/fat_value"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/protein_value"
+                app:layout_constraintTop_toBottomOf="@id/fat" />
 
-                <TextView
-                    android:id="@+id/fat_value"
-                    style="@style/CalorieActivityGreenTextStyle"
-                    android:text="@string/fat_value"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/protein_value"
-                    app:layout_constraintTop_toBottomOf="@id/fat" />
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="kcal_value,carbs_value,protein_value,fat_value" />
 
-                <androidx.constraintlayout.widget.Barrier
-                    android:id="@+id/barrier"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:barrierDirection="bottom"
-                    app:constraint_referenced_ids="kcal_value,carbs_value,protein_value,fat_value" />
+            <View
+                android:id="@+id/divider"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginBottom="@dimen/margin_large"
+                android:background="@color/black"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/barrier" />
 
-                <View
-                    android:layout_width="wrap_content"
-                    android:layout_height="2dp"
-                    android:layout_marginTop="@dimen/margin_large"
-                    android:background="@color/black"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/barrier" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/components_recycler_view"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divider"
+                tools:listitem="@layout/item_component" />
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-        </androidx.core.widget.NestedScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
