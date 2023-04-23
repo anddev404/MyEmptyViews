@@ -67,6 +67,39 @@
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
+                <TextView
+                    android:id="@+id/kcal"
+                    style="@style/CalorieActivityGrayTextStyle"
+                    android:text="@string/kcal"
+                    app:layout_constraintEnd_toStartOf="@+id/carbs"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/name" />
+
+                <TextView
+                    android:id="@+id/carbs"
+                    style="@style/CalorieActivityGrayTextStyle"
+                    android:text="@string/carbs"
+                    app:layout_constraintEnd_toStartOf="@+id/protein"
+                    app:layout_constraintStart_toEndOf="@+id/kcal"
+                    app:layout_constraintTop_toBottomOf="@id/name" />
+
+                <TextView
+                    android:id="@+id/protein"
+                    style="@style/CalorieActivityGrayTextStyle"
+                    android:text="@string/protein"
+                    app:layout_constraintEnd_toStartOf="@+id/fat"
+                    app:layout_constraintStart_toEndOf="@+id/carbs"
+                    app:layout_constraintTop_toBottomOf="@id/name" />
+
+                <TextView
+                    android:id="@+id/fat"
+                    style="@style/CalorieActivityGrayTextStyle"
+                    android:text="@string/fat"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/protein"
+                    app:layout_constraintTop_toBottomOf="@id/name" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
