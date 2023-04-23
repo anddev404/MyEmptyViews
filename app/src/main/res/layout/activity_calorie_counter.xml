@@ -48,6 +48,27 @@
             android:layout_height="match_parent"
             android:contentDescription="@string/description">
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/margin_large">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/margin_large"
+                    android:text="@string/caprese_salad"
+                    android:textColor="@color/calorie_counter_text_color_black"
+                    android:textSize="@dimen/login_text_large"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
 
         </androidx.core.widget.NestedScrollView>
     </androidx.cardview.widget.CardView>
