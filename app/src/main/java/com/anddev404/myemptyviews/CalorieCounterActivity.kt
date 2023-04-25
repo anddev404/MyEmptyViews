@@ -1,11 +1,11 @@
-package com.example.myemptyviews
+package com.anddev404.myemptyviews
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.myemptyviews.model.ComponentItem
-import com.example.myemptyviews.view_adapters.ComponentRecyclerViewAdapter
+import com.anddev404.myemptyviews.model.ComponentItem
+import com.anddev404.myemptyviews.view_adapters.ComponentRecyclerViewAdapter
 
 class CalorieCounterActivity : AppCompatActivity() {
 

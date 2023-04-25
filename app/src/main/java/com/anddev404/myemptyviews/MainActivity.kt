@@ -1,4 +1,4 @@
-package com.example.myemptyviews
+package com.anddev404.myemptyviews
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

@@ -1,4 +1,4 @@
-package com.example.myemptyviews.model
+package com.anddev404.myemptyviews.model
 
 data class ComponentItem(
     var name: String,

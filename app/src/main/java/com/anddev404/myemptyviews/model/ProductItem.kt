@@ -1,8 +1,8 @@
-package com.example.myemptyviews.model
+package com.anddev404.myemptyviews.model
 
 import android.app.Application
 import android.graphics.drawable.Drawable
-import com.example.myemptyviews.R
+import com.anddev404.myemptyviews.R
 
 data class ProductItem(var name: String, var amount: Int, var price: String, var image: Drawable) {
     companion object {

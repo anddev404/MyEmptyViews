@@ -52,7 +52,7 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="@string/donut" />
 
-    <com.example.myemptyviews.compound_views.ProductAmountView
+    <com.anddev404.myemptyviews.compound_views.ProductAmountView
         android:id="@+id/product_amount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

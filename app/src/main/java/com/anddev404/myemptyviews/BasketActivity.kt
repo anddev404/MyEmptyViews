@@ -1,4 +1,4 @@
-package com.example.myemptyviews
+package com.anddev404.myemptyviews
 
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
@@ -7,8 +7,8 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.myemptyviews.model.ProductItem
-import com.example.myemptyviews.view_adapters.ProductRecyclerViewAdapter
+import com.anddev404.myemptyviews.model.ProductItem
+import com.anddev404.myemptyviews.view_adapters.ProductRecyclerViewAdapter
 
 
 class BasketActivity : AppCompatActivity() {

@@ -1,12 +1,12 @@
-package com.example.myemptyviews.view_adapters
+package com.anddev404.myemptyviews.view_adapters
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.myemptyviews.R
-import com.example.myemptyviews.model.ComponentItem
+import com.anddev404.myemptyviews.R
+import com.anddev404.myemptyviews.model.ComponentItem
 
 class ComponentRecyclerViewAdapter(
     private val componentList: List<ComponentItem>

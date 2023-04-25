@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.myemptyviews'
+    namespace 'com.anddev404.myemptyviews'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.myemptyviews"
+        applicationId "com.anddev404.myemptyviews"
         minSdk 24
         targetSdk 33
         versionCode 1

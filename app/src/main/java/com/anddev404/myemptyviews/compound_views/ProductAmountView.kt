@@ -1,11 +1,11 @@
-package com.example.myemptyviews.compound_views
+package com.anddev404.myemptyviews.compound_views
 
 import android.content.Context
 import android.util.AttributeSet
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
-import com.example.myemptyviews.R
+import com.anddev404.myemptyviews.R
 
 class ProductAmountView(context: Context?, attrs: AttributeSet?) : LinearLayout(context, attrs) {
 

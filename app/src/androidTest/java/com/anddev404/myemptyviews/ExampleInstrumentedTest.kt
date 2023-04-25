@@ -1,4 +1,4 @@
-package com.example.myemptyviews
+package com.anddev404.myemptyviews
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.example.myemptyviews", appContext.packageName)
+        assertEquals("com.anddev404.myemptyviews", appContext.packageName)
     }
 }
