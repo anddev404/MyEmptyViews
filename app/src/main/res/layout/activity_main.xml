@@ -49,7 +49,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:contentDescription="@string/third_activity"
-            android:src="@drawable/image_not_available"
+            android:src="@drawable/screenshot_calorie_counter_activity"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/imageView4"
